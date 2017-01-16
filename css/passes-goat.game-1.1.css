@@ -1,0 +1,317 @@
+html {
+    
+    font-size: 16px;
+}
+
+body {
+    
+    font-family: 'Arima Madurai', cursive;
+    
+    color: black;
+    
+    text-align: center;
+}
+
+form {
+    
+    font-family: 'Catamaran';
+}
+
+@keyframes myanimation {
+
+    0% {
+        color: navy;
+    }
+
+    50% {
+        color:  #00CED1;
+    }
+
+    100% {
+
+        color: navy;
+    }
+}
+
+h1 {
+    
+    font-size: 3rem;
+    
+    margin: .25rem;
+    
+    text-shadow: 0.25rem 0.25rem 0.125rem gray;
+    
+    letter-spacing: .125rem;
+
+    word-spacing: .25rem;
+
+    font-weight: bolder;
+
+    font-style: italic;
+
+    color: navy; /* For browsers that do not support gradients */
+
+    animation: myanimation 5s infinite;
+}
+
+h2{
+    
+    margin: 0rem 0rem 1rem 0rem;
+    
+    font-size: 2rem;
+}
+
+h3 {
+    
+    margin: .25rem;
+}
+
+select {
+
+    margin: 0rem 0rem 0rem 1rem;
+}
+
+button {
+    
+    padding: .5rem 1rem;
+    
+    border-radius: .5rem;
+    
+    border: none;
+    
+    background-color: teal;
+    
+    color: white;
+    
+    letter-spacing: .125rem;
+    
+    font-style: italic;
+    
+    font-size: 1rem;
+}
+
+.labelResults{
+
+    font-weight: bold;
+
+    font-size: 2rem;
+
+    margin: 0rem 1rem 0rem .25rem;
+}
+
+.labelFirst{
+
+    font-size: 1rem;
+    
+    width: 3rem;
+
+    margin: 1rem;
+}
+
+#container {   
+    
+    width: 60rem;
+    
+    margin: auto;
+    
+    padding: 1rem;
+    
+    background-color: LightSteelBlue;
+    
+    vertical-align: top;
+    
+    border-radius: 1.5rem;
+}
+
+#leftContainer {    
+
+    width: 29rem;
+    
+    height: 30rem;
+    
+    line-height: 30rem;
+    
+    display: inline-block;
+    
+    margin: 0rem;
+    
+    text-align: center;
+    
+    vertical-align: middle;
+}
+
+
+#rightContainer {
+
+    width: 29rem;
+
+    height: 30rem;
+
+    line-height: 30rem;
+
+    margin: auto;
+
+    display: inline-block;
+
+    vertical-align: middle;   
+}
+
+
+@keyframes myImage {
+    from{
+        height: 0%;
+    }
+
+    to{
+        height: 62%;
+    }
+}
+
+#bigLogo{
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    display: inline-block;
+
+    animation: myImage 5s linear;
+}
+
+#myCanvas {
+
+    border: 0.0625rem solid black;
+
+    display: none;
+
+    background-color: LightSteelBlue;
+
+    text-align: center;
+
+    vertical-align: middle;
+
+    border-radius: 1rem;    
+}
+
+#leftFirst {
+
+    font-size: 2rem;
+
+    line-height: 3rem;
+
+    display: inline-block;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+
+#leftSecond {
+
+    display: none;
+
+    line-height: 2rem;
+
+    text-align: left;    
+}
+
+
+#leftSecond  label {
+
+    width: 4.75rem;
+
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+#leftSecond > div {
+
+    text-align: center;
+
+    width: 100%;
+
+    margin: .75rem 0rem 1rem;
+}
+
+#leftSecond p {
+
+    display: block;
+
+    margin: .5rem 0rem .5rem 2rem;
+
+    vertical-align: middle;
+}
+
+
+#leftSecond img {
+
+    height: 3rem;
+
+    font-size: 2rem;
+
+    margin-right: 1rem;
+
+    vertical-align: middle;
+
+    display: inline-block;
+}
+
+
+#leftSecond span {
+
+    vertical-align: middle;
+
+    display: inline-block;
+
+    line-height: 3rem;
+
+    font-size: 2rem;
+}
+
+#correct {
+
+    color: green;
+} 
+
+#wrong {
+
+    color: #B22222;
+}
+
+#pending {
+
+    color: darkblue;
+
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+#validate {
+
+    margin-right: 1rem;
+
+    background-color: rebeccapurple;
+}
+
+#cheat {
+
+    margin-left: 1rem;
+
+    background-color: #B22222;
+}
+
+#another {
+
+    background-color: #26734d;
+
+    text-align: center;
+}
+
+#messageUp
+{
+    
+    position: fixed;
+
+    z-index: 100;
+}

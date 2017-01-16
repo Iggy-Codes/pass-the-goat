@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Pass the goat</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/passes-goat.game-1.1.css" />
+    
+    <script type="text/javascript" src="js/passes-goat.worddictionary-1.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/passes-goat.worddictionary.english-1.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/passes-goat.worddictionary.spanish-1.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/passes-goat.worddictionary-functions-1.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/passes-goat.canvas-1.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/passes-goat.game-1.1.js" charset="utf-8" defer></script>
+</head>
+<body>
+    
+    <div id="container">
+
+        <header>
+
+            <h1>Pass The Goat</h1>    
+
+            </header>
+        
+        <main>
+
+            <div id="leftContainer">
+
+                <!-- Left First Display -->
+                <form id="leftFirst" onsubmit="return false">
+
+                    <label>Player name: <br/><input type="text" id="playerName" maxlength="15" size="11" autofocus> </label>
+                    
+                    <br/>
+
+                    <label class="labelFirst">Language:
+                        <select name="language" id="language">
+                            <option value="english" selected="">English</option>
+                            <option value="spanish">Spanish</option>
+                        </select>
+                    </label>
+                    
+                    <br/>
+
+                    <label class="labelFirst">Level: 
+                        <select name="level" id="level">
+                            <option value="200" selected="">Begginer</option>
+                            <option value="150">Intermediate</option> 
+                            <option value="100">Professional</option>
+                        </select>
+                    </label>
+
+                    <br/>
+
+                    <button onclick="login()">Start</button>
+
+                </form>
+
+                <!-- Left Second Display -->
+                <form id="leftSecond" onsubmit="return false">
+
+                    <h2>Welcome <span id="playerName"></span></h2>
+
+                    <label>Letter:</label><input id="letter" type="text" maxlength="1" size="1" readonly /><br/>
+
+                    <label>Position: </label><input id="position" type="text" readonly/><br/>
+
+                    <label>Definition: </label><textarea  id="definition" readonly="" cols="30" rows="5"></textarea><br/>
+
+                    <label>Word: </label><input id="word" type="text" />
+
+                    <input type="hidden" id="numLetter" name="numLetter" value="0">
+
+                    <div>
+
+                        <button id="validate" onclick="validateWord()">Validate</button>
+
+                        <button id="skip" onclick="skipWord()">Skip</button>
+
+                        <button id="cheat" onclick="cheatWord()">Cheat</button>
+
+                    </div> 
+
+                    <hr/>
+
+                    <h3>Results</h3>
+
+                    <img src="img/green-goat.svg" alt=""><label  id="correct" class="labelResults">0</label>
+
+                    <img src="img/red-goat.svg" alt=""><label id="wrong"  class="labelResults">0</label>
+
+                    <img src="img/blue-goat.svg" alt=""><label id="pending" class="labelResults">all</label>
+
+                    <hr/>
+
+                    <div>
+
+                        <button id="another" onclick="anotherGame()">Start Another Game</button>    
+
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div id="rightContainer">
+
+                <img id="bigLogo" src='http://www.clker.com/cliparts/l/m/Y/d/L/H/blue-goat-md.png' alt='Blue Goat clip art'/>
+
+                <canvas id="myCanvas" width="400" height="400">hello</canvas>      
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <div id="messageUp"></div>
+    
+</body>
+
+</html>
